@@ -1,0 +1,81 @@
+site:domain.tld inurl:&
+site:domain.tld ext: (php|aspx|asp|txt|jsp|html |xml |bak)
+site:domain.tld inurl:(unsubscribe register|feedback/signup|join/contact|profile|user|comment|api/developer/affiliate/upload|mobile|u 
+site:domain.tld ext:xml | ext:conf | ext:cnf | ext:reg | ext:inf | ext:rdp | ext:cfg | ext:txt | ext:ora | ext:ini
+site:domain.tld ext:sql | ext:dbf | ext:mdb | ext: 10g
+site: domain.tld ext:bkf | ext:bkp | ext:bak | ext:old | ext: backup
+site:domain.tld inurl:login | inurl:signin | intitle:Login | intitle: signin | inurl:auth
+site:domain.tld ext:doc | ext:docx | ext:odt | ext:pdf | ext:rtf | ext: sxw | ext:psw | ext:ppt | ext:pptx | ext:pps | ext: csv
+site:domain.tld ext:action | ext:struts | ext:do
+site: domain.tld filetype:wsdl | filetype:WSDL | ext:sc | inurl:wsdl| Filetype: ?wsdl | inurl:asmx?wsdl | inurl:jws?wsdl | intitle:_
+site: domain.tld filetype:config 
+site:* domain.tld
+site:*.*.domain.tld
+site:.s3.amazonaws.com "domain.tld"
+site: stackoverflow.com "domain.tld"
+link: domain.tld
+site: domain.tld intitle: "Welcome to Nginx"
+site: domain.tld inurl:/api/docs/ intitle:"swagger" 
+site: domain.tld inurl "/swagger/index.html"
+site: domain.tld inurl "swagger"
+site: domain.tld inurl:/api/docs/ intitle:"graphiql"
+site: domain.tld inurl "/graphiql/" site:.domain. tld inurl "graphiql" site: domain.tld intitle "graphiql"
+site:your-target.com inurl:id= site:your-target.com filetype:php 
+site:your-target.com intitle:upload inurl:"-php?id=" intext:"View cart" inurl:"-php?cid=" intext:"shopping" inurl:/news.php?include= inurl:" -php?query="
+#Open Redirect 
+inurl:url=https
+inurl:url=http
+inurl:redirect?https
+inurl:redirect?http
+inurl:redirect=https
+inurl:redirect=http
+inurl:link=http
+inurl: link=https
+inurl:redirecturl=http site:paypal.com
+
+#Codepad - Online Interpreter/Compiler, Sometimes Hard Coded Creds 
+site: codepad.co "Tesla"
+
+#Scribd - EBooks / Although Sometimes Internal Files 
+site:scribd.com "Tesla"
+
+#NodeJS Source site:npmjs.com "Tesla"
+site:npm.runkit.com "Tesla"
+
+#Libararies IO
+site:libraries.io "Tesla"
+
+#Coggle - MindMapping Software
+site: coggle.it "Tesla"
+
+#Papaly site:papaly.com "Tesla"
+
+#Trello - Board Software
+site:trello.com "Tesla"
+
+#Prezi - Presentation Software
+site:prezi.com "Tesla"
+
+#JSDeliver - CDN for NPM & GitHub 
+site: jsdelivr.net "Tesla"
+
+#Codepen - Online Coding Tool 
+site: codepen.io "Tesla"
+
+#Pastebin - Online Txt Sharing 
+site:pastebin.com "Tesla"
+
+#Repl - Online Compiler site:repl.it "Tesla"
+
+#Gitter - Open Source Messaging site:gitter. im "Tesla"
+
+#BitBucket - Similar to GitHub can Store Source Code 
+site:bitbucket.org "Tesla"
+
+#Atlassian - Useful to find Confluence and Jira site:*
+atlassian.net "Tesla"
+
+#Gitlab - Source Code inurl: gitlab "Tesla"
+
+#Find S3 Buckets
+site:.s3.amazonaws.com "Tesla"

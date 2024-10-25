@@ -1,0 +1,62 @@
+# Search Engine Query Reference Guide
+
+## PublicWWW (https://publicwww.com/)
+### JavaScript Library Searches
+- `"jquery-1.12.4/min/jquery-js"` [depth: 0]
+- `"math.min.js"` [depth: 1]
+- `"math.min.js"` [depth: all]
+
+### WordPress Related
+- `"/wp-content/plugins/"` 
+  - Snippet Expression: `|/plugins/([\w\d\-\.]+)/|`
+
+### Bootstrap Searches
+- `site:ir bootstrap`
+- `ip:31.24.238.* bootstrap`
+
+### Contact Information Extraction
+- `"href=\"tel" site:ir`
+  - Snippet Expression: `|\"tel\:([^\"]+)\"|`
+- `"href=\"email" site:ir`
+  - Snippet Expression: `|\"email\:([^\"]+)\"|`
+
+### Session Identifiers
+- `"Set-Cookie: laravel_session"`
+
+## LeakIX (https://leakix.net/)
+### Service Searches
+- `theader.server: "apache"`
+- `+tags:wordpress`
+- `+protocol:elasticsearch`
+- `+tags:printer`
+
+### Data Leak Searches
+- `+dataset.size: >1024`
+- `dataset.rows: >100`
+- `plugin:Nucleiplugin`
+
+## Shodan (https://shodan.io/)
+### Web Application Searches
+- `http.component: "jenkins"`
+- `http.component: laravel`
+- `http.title:"Outlook" country:ir`
+
+### Hardware/Server Searches
+- `http.favicon.hash: 1768726119`
+- `http.title:"Polycom" "Server: lighttpd"`
+- `html: "DVR_H264 ActiveX"`
+
+### Storage/NAS Searches
+- `"Set-Cookie: iomega=" -http.title:"Log In"`
+- `"Set-Cookie: SigmaPortal"`
+
+### Printer/Device Searches
+- `ssl: "Xerox generic root"`
+- `redis_version`
+
+## Notes
+1. Use appropriate depth parameters in PublicWWW for different search scopes
+2. Snippet expressions are used for extracting specific patterns
+3. The `+` prefix in LeakIX indicates mandatory terms
+4. Combine search parameters for more specific results
+5. Use quotation marks for exact phrase matching
